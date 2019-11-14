@@ -16,10 +16,10 @@
 -->
 
 <resources>
-    <color name="colorPrimary">#F9F9F9</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
-    <color name="background">#4A494B</color>
+    <color name="colorPrimary">#1a1a1a</color>
+    <color name="colorPrimaryDark">#121910</color>
+    <color name="colorAccent">#230d21</color>
+    <color name="background">#000000</color>
 
 
 

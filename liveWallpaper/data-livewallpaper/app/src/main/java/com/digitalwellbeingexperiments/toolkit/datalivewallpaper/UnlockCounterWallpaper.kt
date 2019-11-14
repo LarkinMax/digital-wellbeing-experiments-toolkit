@@ -14,6 +14,7 @@
 
 package com.digitalwellbeingexperiments.toolkit.datalivewallpaper
 
+import android.app.WallpaperColors
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
@@ -22,6 +23,7 @@ import android.graphics.Canvas
 import android.graphics.Paint
 import android.graphics.Path
 import android.graphics.Rect
+import android.graphics.drawable.ColorDrawable
 import android.os.Handler
 import android.preference.PreferenceManager
 import android.service.wallpaper.WallpaperService
@@ -65,6 +67,10 @@ class UnlockCounterWallpaper : WallpaperService() {
         private var count = 0
         private var previousCount = 0
         private val drawRunner = Runnable { draw() }
+
+        override fun onComputeColors(): WallpaperColors? {
+            return WallpaperColors.fromDrawable(ColorDrawable(0x00000000))
+        }
 
         // 880 ms
         private val interpolator = PathInterpolator(
